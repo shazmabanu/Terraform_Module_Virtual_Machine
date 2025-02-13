@@ -41,7 +41,7 @@ jobs:
       working-directory: ./terraform  # Ensure validate is run in the correct directory
 
     - name: Terraform Plan
-      run: terraform plan
+      run: terraform plan -refresh=false
       working-directory: ./terraform  # Ensure plan is run in the correct directory
 
     - name: Apply Terraform configuration
