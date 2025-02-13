@@ -34,13 +34,16 @@ jobs:
 
     - name: Initialize Terraform
       run: terraform init
-      
+      working-directory: ./terraform  # Add this line if your Terraform files are in a subfolder like 'terraform'
+
     - name: Validate Terraform configuration
       run: terraform validate
+      working-directory: ./terraform  # Ensure validation is done in the correct directory
 
     - name: Terraform Plan
       run: terraform plan
+      working-directory: ./terraform  # Ensure plan is done in the correct directory
 
     - name: Apply Terraform configuration
       run: terraform apply -auto-approve
-     
+      working-directory: ./terraform  # Ensure apply is done in the correct directory
