@@ -114,14 +114,12 @@ variable "linux_version" {
 variable "admin_username" {
   description = "The username for the VM administrator."
   type        = string
-  default     = "adminuser"
 }
 
 variable "admin_password" {
   description = "The password for the VM administrator."
   type        = string
   sensitive   = true
-  default     = "adminpassword123!"
 }
 
 variable "tags" {
