@@ -82,7 +82,7 @@ variable "windows_sku" {
 variable "windows_version" {
   description = "Version of the Windows image"
   type        = string
-  default     = "latest"
+  default     = "14393.6351.23"
 }
 
 # Linux-related image variables
@@ -107,19 +107,21 @@ variable "linux_sku" {
 variable "linux_version" {
   description = "Version of the Linux image"
   type        = string
-  default     = "latest"
+  default     = "18.04.202401161"
 }
 
 #Admin Variables
 variable "admin_username" {
   description = "The username for the VM administrator."
   type        = string
+  default     = "adminuser"
 }
 
 variable "admin_password" {
   description = "The password for the VM administrator."
   type        = string
   sensitive   = true
+  default     = "adminpassword123!"
 }
 
 variable "tags" {
