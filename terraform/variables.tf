@@ -51,63 +51,53 @@ variable "vm_size" {
 variable "os_type" {
   description = "The OS type of the VM (Windows or Linux)."
   type        = string
-  default     = "Windows"
 }
 
 variable "storage_account_type" {
   description = "The Storage Account type of the VM (Windows or Linux)."
   type        = string
-  default     = "Standard_LRS"
 }
 
 # Windows-related image variables
 variable "windows_publisher" {
   description = "Publisher for the Windows image"
   type        = string
-  default     = "MicrosoftWindowsServer"
 }
 
 variable "windows_offer" {
   description = "Offer for the Windows image"
   type        = string
-  default     = "WindowsServer"
 }
 
 variable "windows_sku" {
   description = "SKU for the Windows image"
   type        = string
-  default     = "2012-R2-Datacenter"
 }
 
 variable "windows_version" {
   description = "Version of the Windows image"
   type        = string
-  default     = "14393.6351.23"
 }
 
 # Linux-related image variables
 variable "linux_publisher" {
   description = "Publisher for the Linux image"
   type        = string
-  default     = "Canonical"
 }
 
 variable "linux_offer" {
   description = "Offer for the Linux image"
   type        = string
-  default     = "UbuntuServer"
 }
 
 variable "linux_sku" {
   description = "SKU for the Linux image"
   type        = string
-  default     = "14.04.2-LTS"
 }
 
 variable "linux_version" {
   description = "Version of the Linux image"
   type        = string
-  default     = "18.04.202401161"
 }
 
 #Admin Variables
