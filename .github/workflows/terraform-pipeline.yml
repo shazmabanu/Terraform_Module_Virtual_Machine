@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - main  # Trigger the workflow on changes to the main branch
+    paths:
+      - 'terraform/**' 
   pull_request:
     branches:
       - main  # Trigger workflow on PR to the main branch
+    paths:
+      - 'terraform/**' 
 
 jobs:
   terraform:
