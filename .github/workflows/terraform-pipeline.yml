@@ -34,16 +34,16 @@ jobs:
 
     - name: Initialize Terraform
       run: terraform init
-      working-directory: ./terraform  # Use the correct directory for Terraform files
+      working-directory: ./terraform
 
     - name: Validate Terraform configuration
       run: terraform validate
-      working-directory: ./terraform  # Ensure validate is run in the correct directory
-
+      working-directory: ./terraform
+      
     - name: Terraform Plan
       run: terraform plan
-      working-directory: ./terraform  # Ensure plan is run in the correct directory
+      working-directory: ./terraform
 
     - name: Apply Terraform configuration
       run: terraform apply -auto-approve
-      working-directory: ./terraform  # Ensure apply is run in the correct directory
+      working-directory: ./terraform 
